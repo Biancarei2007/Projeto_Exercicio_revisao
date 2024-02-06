@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Revisão: Conceitos Básicos de SQL, Java, C e C++</title>
+    <a class="navbar-brand" href="/">
+        <img src="https://www.epfundao.edu.pt/openschool_core/static/src/img/logo_w.png">
+      </a>
+</head>
+<body>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: lightblue;
+            font-size: 25px;
+        }
+        .dark-mode {
+            background-color: lightblue;
+            color: white;
+        }
+        .light-mode {
+            background-color: white;
+            color: lightblue;
+        }
+        #rightButton {
+            margin-left: 80%;
+            background-color: #48d8b9; /* Green */
+            border: none;
+            color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        </style>
+    </head>
+        <h3 id="DarkModetext">Dark Mode is OFF</h3>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+        <script>
+        function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+        </script>
+    <style>
+
+        body {
+            background-color: lightblue;
+            color: white;
+            margin-top: 7%;
+            margin-left: 5%;
+        }
+
+        #rightButton {
+            margin-left: 80%;
+            background-color: #48d8b9; /* Green */
+            border: none;
+            color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    
+            </style>
+            <h1>Exercício de Revisão: Conceitos Básicos de SQL, Java, C e C++</h1>
+            <h2>Instruções: Responda às seguintes perguntas para revisar e solidificar seus conhecimentos em conceitos básicos de SQL, Java, C e C++.</h2>
+            <h3>1- SQL (Structured Query Language):</h3>
+            <h4><li> O que é SQL e qual é o seu propósito no contexto de bancos de dados?</li></h4>
+            <h5>SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular dados em bancos de dados relacionais. Ele permite realizar operações como consultas, inserções, atualizações e exclusões, fornecendo uma maneira padronizada e eficiente de interagir com dados armazenados em sistemas de gerenciamento de banco de dados relacionais.</h5>
+            <h4><li>Forneça um exemplo de uma consulta SQL simples.</li></h4>
+            <h5>Consulta SQL para extrair dados de uma tabela. Suponhamos que temos uma tabela chamada "Clientes" com as colunas "ID", "Nome" e "Email" consulta SQL para extrair dados de uma tabela.Essa consulta utiliza a cláusula SELECT para indicar que queremos extrair dados, o asterisco (*) indica que queremos todas as colunas, e FROM Clientes especifica a tabela da qual queremos extrair os dados.</h5>
+            <img src="./img/Sql_data_base_with_logo.png" width="400" height="150" alt="">
+            <h3>2- Banco de Dados Relacional:</h3>
+            <h4><li>Explique o conceito de um banco de dados relacional.</li></h4>
+            <h5>Um banco de dados relacional organiza dados em tabelas bidimensionais, onde cada tabela tem linhas (registros) e colunas (atributos).Cada tabela possui uma chave primária única para identificar registros, e relações entre tabelas são estabelecidas usando chaves primárias e estrangeiras.</h5>
+            <h4><li>Cite pelo menos três tipos de dados que podem ser armazenados em um banco dedados relacional.</li></h4>
+            <h5>Dados Numéricos:Esses tipos de dados são usados para armazenar valores numéricos, como quantidades, preços e índices.</h5>
+            <h5>Dados de Texto:Eles são comumente utilizados para representar nomes, descrições e outras informações de texto.</h5>
+            <h5>Dados de Data e Hora:Esses tipos de dados são úteis para armazenar datas de nascimento, datas de transações e outros eventos relacionados ao tempo.</h5>
+            <img src="./img/image004.jpg" width="450" height="200" alt="">
+            <h3>3- Java:</h3>
+            <h4><li> Descreva brevemente a linguagem de programação Java.</li></h4>
+            <h5>Java é uma linguagem de programação orientada a objetos e independente de plataforma. Desenvolvida pela Sun Microsystems, ela utiliza o conceito de bytecode executado pela Máquina Virtual Java (JVM). Sua independência de plataforma permite que os programas escritos em Java sejam executados em diferentes sistemas operacionais.</h5>
+            <h4><li>Mencione pelo menos três características-chave de Java.</li></h4>
+            <h5>Rica Biblioteca Padrão (API):Java oferece uma extensa biblioteca padrão (API - Application Programming Interface) que abrange uma ampla gama de funcionalidades.</h5>
+            <h5>Segurança:Java possui recursos integrados de segurança, incluindo a execução de programas Java em um ambiente de sandbox, restringindo o acesso não autorizado a recursos do sistema.</h5>
+            <h5>Portabilidade:O código Java é compilado em bytecode, que pode ser executado em qualquer Máquina Virtual Java (JVM).</h5>
+            <img src="./img/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-large.webp" width="400" height="250" alt="">
+            <h3>4- C e C++:</h3>
+            <h4><li>Quais são as principais diferenças entre as linguagens de programação C e C++?</li></h4>
+            <h5>C e C++ são linguagens de programação relacionadas, mas com abordagens distintas. Enquanto C é uma linguagem procedural focada em funções, C++ é uma extensão que introduz programação orientada a objetos, permitindo o uso de classes, herança e polimorfismo. C++ também simplifica a manipulação de strings com a classe string e oferece recursos avançados de gerenciamento de memória, como alocação dinâmica.</h5>
+            <h4><li>Dê exemplos de situações em que cada uma dessas linguagens seria mais apropriada.</li></h4>
+            <h5>Programação de Sistemas Embarcados: C é frequentemente usado na programação de sistemas embarcados devido ao seu baixo nível de abstração e controle direto sobre hardware.Desenvolvimento de Sistemas Operacionais: Por sua eficiência e controle de baixo nível, C é uma escolha comum para desenvolver sistemas operacionais.</h5>
+            <h5>Desenvolvimento de Jogos: C++ é amplamente utilizado na indústria de jogos devido à sua capacidade de modelar objetos e comportamentos complexos, proporcionando eficiência e flexibilidade.Desenvolvimento de Bibliotecas e Frameworks: A capacidade de criar bibliotecas reutilizáveis e frameworks torna C++ uma escolha adequada para desenvolvimento de software extensível e modular.</h5>
+            <img src="./img/21.jfif" width="350" height="200" alt="">
+            <h3>5- Variáveis em C e C++:</h3>
+            <h4><li>Como você declara uma variável em C?</li></h4>
+            <h5>Em C, você declara uma variável especificando o tipo de dado seguido pelo nome da variável.</h5>
+            <h4><li>E em C++?</li></h4>
+            <h5>Em C++, a programação orientada a objetos permite a criação de tipos de dados personalizados (classes), e você pode declarar variáveis desses tipos personalizados.</h5>
+            <img src="./img/cc.jpg" width="450" height="250" alt="">
+            <h3>6- Estruturas de Controle de Fluxo:</h3>
+            <h4><li>Mencione três estruturas de controle de fluxo utilizadas em Java</li></h4>
+            <h5>Estrutura de Controle Condicional (if-else):Permite a execução condicional de blocos de código com base em uma condição booleana.</h5>
+            <h5>Estrutura de Repetição (for):Utilizada para iterar sobre uma sequência de valores ou realizar uma ação um número específico de vezes.</h5>
+            <h5>Estrutura de Repetição (while):Semelhante ao for, mas a condição de continuação é avaliada antes de cada iteração.A execução do bloco de código ocorre enquanto a condição é verdadeira.</h5>
+            <h4><li>E em C e C++?</li></h4>
+            <h5>Tem as mesmas estruturas de Controlo de Fluxo.</h5>
+            <img src="./img/new_fluxo_escolhaV.gif" width="400" height="250" alt="">
+            <h3>7- Manipulação de Strings:</h3>
+            <h4><li>Explique como você manipularia strings em Java.</li></h4>
+            <h5>Em Java, a manipulação de strings é feita principalmente com a classe String. Para criar, você pode usar as aspas duplas ou concatenar strings. A comparação é realizada com equals e compareTo. Substrings podem ser obtidas com substring,e transformações de capitalização são feitas com toUpperCase e toLowerCase.</h5>
+            <h4><li>E em C e C++?</li></h4>
+            <h5>Criação de Strings:Utiliza arrays de caracteres.</h5>
+            <img src="./img/5-Métodos-para-manipular-strings-em-JavaScript-740x414.webp" width="450" height="250" alt="">
+            <h3>8- Operadores Relacionais e Lógicos:</h3>
+            <h4><li>Liste pelo menos três operadores relacionais em C++</li></h4>
+            <h5>Igual a (==):Verifica se dois valores são iguais.</h5>
+            <h5>Diferente de (!=):Verifica se dois valores são diferentes.</h5>
+            <h5>Maior que (>):Verifica se o valor à esquerda é maior que o valor à direita.</h5>
+            <h4><li>Como os operadores lógicos são utilizados em Java?</li></h4>
+            <h5>Em Java, os operadores lógicos são utilizados para realizar operações booleanas em expressões condicionais.Os principais operadores lógicos são (AND) (OR) e (NOT).</h5>
+            <img src="./img/operadores relacionais.png" width="400" height="250" alt="">
+            <h3>9- Alocamento de Memória:</h3>
+            <h4><li>Como a alocação de memória é tratada em C e C++?</li></h4>
+            <h5>Em C, a alocação de memória é tratada manualmente por meio das funções malloc, calloc, realloc, e free. O programador é responsável por gerenciar a memória alocada e liberá-la quando não for mais necessária.</h5>
+            <h5>Em C++, são utilizados os operadores new e delete para alocação e liberação de memória.</h5>
+            <h4><li>Existe alguma diferença significativa entre os dois?</li></h4>
+            <h5>Em C, utiliza-se malloc, calloc, realloc e free, com gerenciamento manual. Já em C++, os operadores new e delete proporcionam uma abordagem mais orientada a objetos,com recursos como smart pointers para facilitar o gerenciamento automático e seguro de memória.</h5>
+            <img src="./img/CF20050926d.jpg" width="400" height="250" alt="">
+            <h3>10- Comandos SQL para CRUD:</h3>
+            <h4><li>Liste os comandos SQL básicos para realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados.</li></h4>
+            <h5>CREATE (Criar):Criação de tabelas.</h5>
+            <h5>SELECT (Ler):Permite ler e recuperar dados específicos de uma tabela no banco de dados.</h5>
+            <h5>UPDATE (Atualizar):Modificação de registros existentes.</h5>
+            <h5>DELETE (Excluir):Remoção de registros.</h5>
+            <img src="./img/fileter.jpg" width="300" height="200" alt="">
+            <body background="./img/3.png"></body>
+</body>
+</html>
